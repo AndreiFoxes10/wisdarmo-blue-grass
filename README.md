@@ -2,7 +2,7 @@
   <img src="wbg_brandlogo1.jpg" width="700"/>
 </p>
 
-It's free and Open Source.
+It's free and open-source.
 
 Hiding publishment from Social Media Features, no scolling and no drama, just send the posts link to chat as unlisted posts, embed posts to your website, and go outside and touch the grass.
 
