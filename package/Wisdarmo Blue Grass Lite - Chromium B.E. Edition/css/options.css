@@ -1,0 +1,27 @@
+.logo {
+	max-width: 670px;
+}
+
+.container {
+	max-width: 670px;
+	margin: auto;
+	background: var(--wbg-blue2);
+	border-style: none solid;
+	border-color: var(--wbg-gray1);
+}
+
+.img1 {
+	max-width: 500px;
+	width: 100%;
+	position: relative;
+}
+
+.img2 {
+	max-width: 250px;
+	width: 100%;
+	position: relative;
+}
+
+#reset-settings {
+	margin: 0 auto;
+}

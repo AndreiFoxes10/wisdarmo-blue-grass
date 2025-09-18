@@ -1,0 +1,55 @@
+{
+	"name": "Wisdarmo Blue Grass Lite: FireFox B.E. Editon [Alpha 1]",
+	"description": "Block Published contents from features, Websites, and Social Media.",
+	"version": "0.0.10",
+	"manifest_version": 3,
+	
+	"icons": {
+		"16": "img/icon16.png",
+		"32": "img/icon32.png",
+		"48": "img/icon48.png",
+		"128": "img/icon128.png",
+		"180": "img/icon180.png"
+	},
+	
+	"permissions": ["storage", "activeTab"],
+	
+	"content_security_policy": {
+		"extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'none'; connect-src *;media-src *; img-src data:;"
+	},
+	
+	"action": {
+		"default_popup": "popup.html"
+	},
+	
+	"options_ui": {
+		"page": "options.html",
+		"open_in_tab": true
+	},
+	
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.youtube.com/",
+				"https://www.youtube.com/shorts/*",
+				"https://www.youtube.com/@*",
+				"https://sketchersunited.org/*",
+				"https://*.newgrounds.com/*"
+			],
+			"js": [
+				"js/content.js"
+			]
+		}
+	],
+	
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"*"
+			],
+			"matches": [
+				"<all_urls>"
+			]
+		}
+	]
+}

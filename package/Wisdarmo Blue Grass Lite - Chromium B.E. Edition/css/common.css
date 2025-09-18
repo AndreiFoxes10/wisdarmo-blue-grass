@@ -1,0 +1,43 @@
+:root {
+	--wbg-blue1: #2b89c4;
+	--wbg-blue2: #1f509c;
+	--wbg-gray1: #2d4569;
+}
+
+body {
+	margin: auto;
+	background: var(--wbg-blue1);
+	font:
+		16px Arial,
+		sans-serif;
+	color: white;
+}
+
+.header {
+	text-align: center;
+	position: relative;
+}
+
+.logo {
+	width: 100%;
+	position: relative;
+}
+
+.div1 {
+	text-align: center;
+}
+
+.footer {
+	text-align: center;
+	position: relative;
+}
+
+/* Controls */
+
+button {
+	border: 2px solid var(--wbg-gray1);
+	cursor: pointer;
+	text-align: center;
+	background: var(--wbg-gray1);
+	color: white;
+}
