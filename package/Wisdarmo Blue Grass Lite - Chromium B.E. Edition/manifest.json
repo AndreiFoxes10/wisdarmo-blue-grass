@@ -1,8 +1,8 @@
 {
-	"name": "Wisdarmo Blue Grass Lite: Chromium B.E. Editon [Alpha 1]",
+	"name": "Wisdarmo Blue Grass Lite: Chromium B.E. Editon [Alpha 2]",
 	"description": "Block Published contents from features, Websites, and Social Media.",
-	"version": "0.0.10",
-	"version_name": "0.0.10-alpha.1",
+	"version": "0.0.25",
+	"version_name": "0.0.25-alpha.2",
 	"manifest_version": 3,
 	
 	"icons": {
@@ -27,11 +27,7 @@
 	"content_scripts": [
 		{
 			"matches": [
-				"https://www.youtube.com/",
-				"https://www.youtube.com/shorts/*",
-				"https://www.youtube.com/@*",
-				"https://sketchersunited.org/*",
-				"https://*.newgrounds.com/*"
+				"<all_urls>"
 			],
 			"js": [
 				"js/content.js"
@@ -49,6 +45,4 @@
 			]
 		}
 	]
-
 }
-
