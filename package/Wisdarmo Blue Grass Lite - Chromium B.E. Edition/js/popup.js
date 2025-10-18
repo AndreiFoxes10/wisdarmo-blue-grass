@@ -9,6 +9,7 @@ wbgls1.get(["ls_wbgstarter1"]).then((result) => {
 	if (wbgstarter1 != true) {
 		console.log(title1 + "LS starter undetected, LS's are now added.");
 		wbgls1.set({ "ls_wbgstarter1": true });
+		wbgls1.set({ "ls_wbgswitch1": 0 });
 		wbgls1.set({ "ls_turnoff_yt1": false });
 		wbgls1.set({ "ls_turnoff_su1": true });
 		wbgls1.set({ "ls_turnoff_ng1": false });
