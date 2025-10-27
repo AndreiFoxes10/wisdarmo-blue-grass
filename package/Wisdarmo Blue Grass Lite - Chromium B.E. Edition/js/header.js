@@ -3,6 +3,6 @@ document.getElementById("headerjs1").innerHTML = `
 `
 
 document.getElementById("headerjs2").innerHTML = `
-	<div>[Alpha 2]</div>
+	<div>[Alpha 2.5]</div>
 	<div>Created by @AndreiFoxes10</div>
 `

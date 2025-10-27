@@ -539,6 +539,51 @@ wbgls1.get(["ls_wbgswitch1"]).then((result) => {
 				}
 			}
 		})
+		
+		// 10 Roblox
+		wbgls1.get(["ls_turnoff_roblox2"]).then((result) => {
+			let rm_turnoff10 = result.ls_turnoff_roblox2;
+			if (rm_turnoff10 == true) {
+				if (site1.includes("roblox.com")) {
+					if (rmBody1) {
+						rmBody1.innerHTML = rm_innerhtml1;
+						rmHead1.innerHTML = rm_innerhtml2;
+					} else {
+						console.log(title1 + "Restriction not working. :(");
+					}
+				}
+			}
+		})
+		
+		// 11 Reddit
+		wbgls1.get(["ls_turnoff_reddit2"]).then((result) => {
+			let rm_turnoff11 = result.ls_turnoff_reddit2;
+			if (rm_turnoff11 == true) {
+				if (site1.includes("reddit.com")) {
+					if (rmBody1) {
+						rmBody1.innerHTML = rm_innerhtml1;
+						rmHead1.innerHTML = rm_innerhtml2;
+					} else {
+						console.log(title1 + "Restriction not working. :(");
+					}
+				}
+			}
+		})
+		
+		// 12 4chan
+		wbgls1.get(["ls_turnoff_4chan2"]).then((result) => {
+			let rm_turnoff12 = result.ls_turnoff_4chan2;
+			if (rm_turnoff12 == true) {
+				if (site1.includes("4chan.org")) {
+					if (rmBody1) {
+						rmBody1.innerHTML = rm_innerhtml1;
+						rmHead1.innerHTML = rm_innerhtml2;
+					} else {
+						console.log(title1 + "Restriction not working. :(");
+					}
+				}
+			}
+		})
 	} else if (srm1 == 1) {
 		// Super access restriction mode (W.I.P.)
 		console.log(title1 + message5);
