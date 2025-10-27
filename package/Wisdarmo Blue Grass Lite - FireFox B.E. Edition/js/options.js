@@ -28,6 +28,9 @@ wbgls1.get(["ls_wbgstarter1"]).then((result) => {
 		wbgls1.set({ "ls_turnoff_su2": false });
 		wbgls1.set({ "ls_turnoff_ng2": false });
 		wbgls1.set({ "ls_turnoff_discord2": false });
+		wbgls1.set({ "ls_turnoff_roblox2": false });
+		wbgls1.set({ "ls_turnoff_reddit2": false });
+		wbgls1.set({ "ls_turnoff_4chan2": false });
 	} else {
 		console.log(title1 + "LS starter detected!");
 	}
@@ -52,6 +55,9 @@ resetsettings1.onclick = function() {
 	wbgls1.remove([ "ls_turnoff_su2" ]);
 	wbgls1.remove([ "ls_turnoff_ng2" ]);
 	wbgls1.remove([ "ls_turnoff_discord2" ]);
+	wbgls1.remove([ "ls_turnoff_roblox2" ]);
+	wbgls1.remove([ "ls_turnoff_reddit2" ]);
+	wbgls1.remove([ "ls_turnoff_4chan2" ]);
 	window.location.reload();
 }
 
@@ -285,6 +291,27 @@ wbgls1.get(["ls_turnoff_discord2"]).then((result) => {
 	rm_checkbox9.checked = result.ls_turnoff_discord2;
 })
 
+// 10 Roblox
+const rm_checkbox10 = document.getElementById("turnoff_roblox2");
+
+wbgls1.get(["ls_turnoff_roblox2"]).then((result) => {
+	rm_checkbox10.checked = result.ls_turnoff_roblox2;
+})
+
+// 11 Reddit
+const rm_checkbox11 = document.getElementById("turnoff_reddit2");
+
+wbgls1.get(["ls_turnoff_reddit2"]).then((result) => {
+	rm_checkbox11.checked = result.ls_turnoff_reddit2;
+})
+
+// 12 4chan
+const rm_checkbox12 = document.getElementById("turnoff_4chan2");
+
+wbgls1.get(["ls_turnoff_4chan2"]).then((result) => {
+	rm_checkbox12.checked = result.ls_turnoff_4chan2;
+})
+
 // Second
 // 1 YouTube
 rm_checkbox1.onclick = function() {
@@ -382,5 +409,38 @@ rm_checkbox9.onclick = function() {
 	} else {
 		wbgls1.set({ "ls_turnoff_discord2": false });
 		console.log(title1 + "Discord access is on!");
+	}
+}
+
+// 10 Roblox
+rm_checkbox10.onclick = function() {
+	if (rm_checkbox10.checked == true){
+		wbgls1.set({ "ls_turnoff_roblox2": true });
+		console.log(title1 + "Roblox access is off!");
+	} else {
+		wbgls1.set({ "ls_turnoff_roblox2": false });
+		console.log(title1 + "Roblox access is on!");
+	}
+}
+
+// 11 Reddit
+rm_checkbox11.onclick = function() {
+	if (rm_checkbox11.checked == true){
+		wbgls1.set({ "ls_turnoff_reddit2": true });
+		console.log(title1 + "Reddit access is off!");
+	} else {
+		wbgls1.set({ "ls_turnoff_reddit2": false });
+		console.log(title1 + "Reddit access is on!");
+	}
+}
+
+// 12 4chan
+rm_checkbox12.onclick = function() {
+	if (rm_checkbox12.checked == true){
+		wbgls1.set({ "ls_turnoff_4chan2": true });
+		console.log(title1 + "4chan access is off!");
+	} else {
+		wbgls1.set({ "ls_turnoff_4chan2": false });
+		console.log(title1 + "4chan access is on!");
 	}
 }
