@@ -4,7 +4,7 @@
 </p>
 
 
-[November 10th, 2025] Important note: WBG will no longer be updated.
+[November 10th, 2025] Important note: WBG Lite will no longer be updated.
 
 
 Free and open-source.
